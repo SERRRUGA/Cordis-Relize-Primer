@@ -418,16 +418,36 @@ footer {
     
     .catalog-title {
         font-size: 2.5rem;
+        margin-bottom: 30px;
     }
     
     .catalog-container {
         grid-template-columns: 1fr;
-        gap: 20px;
-        max-width: 400px;
+        gap: 25px;
+        max-width: 100%;
+        padding: 0 15px;
+    }
+    
+    .product-card {
+        margin: 0 5px;
+        border-radius: 12px;
     }
     
     .product-image {
-        height: 200px;
+        height: 280px; /* Увеличил высоту изображения */
+    }
+    
+    .product-info {
+        padding: 25px 20px; /* Увеличил отступы */
+    }
+    
+    .product-name {
+        font-size: 1.6rem; /* Увеличил шрифт названия */
+        margin-bottom: 15px;
+    }
+    
+    .product-price {
+        font-size: 2rem; /* Увеличил шрифт цены */
     }
     
     .close-fullscreen {
@@ -442,43 +462,72 @@ footer {
     }
     
     .fullscreen-arrow {
-        width: 40px;
-        height: 40px;
-        font-size: 20px;
+        width: 45px;
+        height: 45px;
+        font-size: 22px;
     }
     
     .fullscreen-nav {
-        bottom: 20px;
-        padding: 0 15px;
+        bottom: 25px;
+        padding: 0 20px;
     }
     
     .slider-arrow {
-        width: 25px;
-        height: 25px;
-        font-size: 16px;
+        width: 28px;
+        height: 28px;
+        font-size: 18px;
     }
     
     .slider-nav {
-        padding: 0 8px;
+        padding: 0 10px;
+        bottom: 15px;
+    }
+    
+    .dot {
+        width: 10px;
+        height: 10px;
     }
 }
 
 /* Дополнительно для очень маленьких экранов */
 @media (max-width: 480px) {
     .catalog-container {
-        gap: 15px;
-        max-width: 350px;
+        gap: 20px;
+        padding: 0 10px;
     }
     
-    .product-card {
-        margin: 0 10px;
+    .product-image {
+        height: 260px;
     }
     
     .product-name {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
     }
     
     .product-price {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
+    }
+    
+    .product-info {
+        padding: 20px 15px;
+    }
+}
+
+/* Для очень высоких телефонов */
+@media (max-width: 768px) and (min-height: 700px) {
+    .product-image {
+        height: 320px;
+    }
+}
+
+/* Для горизонтальной ориентации на телефонах */
+@media (max-width: 768px) and (orientation: landscape) {
+    .catalog-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    
+    .product-image {
+        height: 200px;
     }
 }
