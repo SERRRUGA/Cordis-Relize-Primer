@@ -13,99 +13,40 @@
         <nav>
             <ul>
                 <li><a href="index.html">Главная</a></li>
-                <li><a href="catalog.html">Каталог</a></li>
-                <li><a href="#">Контакты</a></li>
+                <li><a href="onas.html">О нас</a></li>
+                <li><a href="svaz.html">Контакты</a></li>
             </ul>
         </nav>
     </header>
-    
+
     <main>
-        <h1 class="catalog-title">КАТАЛОГ</h1>
+        <h1 class="catalog-title">Дропы</h1>
         
-        <div class="catalog-container">
-            <!-- Карточка товара 1 -->
-            <div class="product-card">
-                <div class="product-image">
-                    <div class="slider-container">
-                        <div class="slider-track">
-                            <div class="slide active">
-                                <img src="img\футболка бел лиц.png" alt="Футболка белая лицевая сторона">
-                            </div>
-                            <div class="slide">
-                                <img src="img\футболка черн лиц.png" alt="Футболка белая задняя сторона">
-                            </div>
-                        </div>
-                        <div class="slider-nav">
-                            <button class="slider-arrow prev">‹</button>
-                            <div class="slider-dots">
-                                <span class="dot active" data-index="0"></span>
-                                <span class="dot" data-index="1"></span>
-                            </div>
-                            <button class="slider-arrow next">›</button>
-                        </div>
+        <div class="drops-grid">
+            <div class="drop-card">
+                <div class="drop-image">
+                    <video autoplay muted loop playsinline>
+                        <source src="img\AC SC Video.mp4" type="video/mp4">
+                        Ваш браузер не поддерживает видео
+                    </video>
+                    <div class="drop-overlay">
+                        <button class="view-drop-btn">Смотреть коллекцию</button>
                     </div>
                 </div>
-                <div class="product-info">
-                    <h3 class="product-name">Футболка белая</h3>
-                    <p class="product-price">1,500 ₽</p>
-                </div>
-            </div>
-            
-            <!-- Карточка товара 2 -->
-            <div class="product-card">
-                <div class="product-image">
-                    <div class="slider-container">
-                        <div class="slider-track">
-                            <div class="slide active">
-                                <img src="img\футболка беслана лиц.jpg" alt="Футболка черная лицевая сторона">
-                            </div>
-                            <div class="slide">
-                                <img src="img\футболка беслана зад.jpg" alt="Футболка черная задняя сторона">
-                            </div>
-                        </div>
-                        <div class="slider-nav">
-                            <button class="slider-arrow prev">‹</button>
-                            <div class="slider-dots">
-                                <span class="dot active" data-index="0"></span>
-                                <span class="dot" data-index="1"></span>
-                            </div>
-                            <button class="slider-arrow next">›</button>
-                        </div>
+                <div class="drop-info">
+                    <h2 class="drop-name">Scarlet Memories</h2>
+                    <div class="drop-date">XX.01.2026</div>
+                    <p class="drop-desc">Ностальгия по несуществующему прошлому</p>
+                    <div class="drop-stats">
+                        <span class="drop-status upcoming">Скоро</span>
                     </div>
-                </div>
-                <div class="product-info">
-                    <h3 class="product-name">Футболка черная</h3>
-                    <p class="product-price">1,600 ₽</p>
-                </div>
-            </div>
-            
-            <!-- Добавьте остальные карточки по аналогии -->
-        </div>
-        
-        <!-- Полноэкранный просмотр изображения с слайдером -->
-        <div id="fullscreenView" class="fullscreen-view">
-            <span class="close-fullscreen" onclick="closeFullscreen()">&times;</span>
-            
-            <div class="fullscreen-slider">
-                <div class="fullscreen-track">
-                    <!-- Слайды будут добавляться динамически -->
-                </div>
-                
-                <div class="fullscreen-nav">
-                    <button class="fullscreen-arrow prev">‹</button>
-                    <div class="fullscreen-dots">
-                        <!-- Точки будут добавляться динамически -->
-                    </div>
-                    <button class="fullscreen-arrow next">›</button>
                 </div>
             </div>
         </div>
     </main>
-    
+
     <footer>
-        &copy; 2023 Archivum Cordis. All rights reserved.
+        &copy; 2025 Archivum Cordis. All rights reserved.
     </footer>
-    
-    <script src="catalog.js"></script>
 </body>
 </html>

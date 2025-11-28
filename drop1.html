@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop 1.</title>
+    <link href="https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Archivum Cordis</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="katalog.html">Каталог</a></li>
+                <li><a href="onas.html">О нас</a></li>
+                <li><a href="svaz.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 class="catalog-title">КАТАЛОГ</h1>
+        
+        <div class="catalog-container">
+            <!-- Карточка товара 1 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <div class="slider-container">
+                        <div class="slider-track">
+                            <div class="slide active">
+                                <img src="img\футболка бел лиц.png" alt="Футболка белая лицевая сторона">
+                            </div>
+                            <div class="slide">
+                                <img src="img\футболка черн лиц.png" alt="Футболка белая задняя сторона">
+                            </div>
+                        </div>
+                        <div class="slider-nav">
+                            <button class="slider-arrow prev">‹</button>
+                            <div class="slider-dots">
+                                <span class="dot active" data-index="0"></span>
+                                <span class="dot" data-index="1"></span>
+                            </div>
+                            <button class="slider-arrow next">›</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Футболка белая</h3>
+                    <p class="product-price">1,500 ₽</p>
+                </div>
+            </div>
+            
+            <!-- Карточка товара 2 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <div class="slider-container">
+                        <div class="slider-track">
+                            <div class="slide active">
+                                <img src="img\футболка беслана лиц.jpg" alt="Футболка черная лицевая сторона">
+                            </div>
+                            <div class="slide">
+                                <img src="img\футболка беслана зад.jpg" alt="Футболка черная задняя сторона">
+                            </div>
+                        </div>
+                        <div class="slider-nav">
+                            <button class="slider-arrow prev">‹</button>
+                            <div class="slider-dots">
+                                <span class="dot active" data-index="0"></span>
+                                <span class="dot" data-index="1"></span>
+                            </div>
+                            <button class="slider-arrow next">›</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Футболка черная</h3>
+                    <p class="product-price">1,600 ₽</p>
+                </div>
+            </div>
+            
+            <!-- Добавьте остальные карточки по аналогии -->
+        </div>
+        
+        <!-- Полноэкранный просмотр изображения с слайдером -->
+        <div id="fullscreenView" class="fullscreen-view">
+            <span class="close-fullscreen" onclick="closeFullscreen()">&times;</span>
+            
+            <div class="fullscreen-slider">
+                <div class="fullscreen-track">
+                    <!-- Слайды будут добавляться динамически -->
+                </div>
+                
+                <div class="fullscreen-nav">
+                    <button class="fullscreen-arrow prev">‹</button>
+                    <div class="fullscreen-dots">
+                        <!-- Точки будут добавляться динамически -->
+                    </div>
+                    <button class="fullscreen-arrow next">›</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        &copy; 2025 Archivum Cordis. All rights reserved.
+    </footer>
+    
+    <script src="catalog.js"></script>
+</body>
+</html>
